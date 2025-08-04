@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Image Gallery</h1>
+            <p>Explore beautiful images from around the world</p>
+        </header>
+
+        <nav class="filter-nav">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">🌿 Nature</button>
+            <button class="filter-btn" data-filter="art">🎨 Art</button>
+            <button class="filter-btn" data-filter="animals">🐾 Animals</button>
+            <button class="filter-btn" data-filter="portraits">👤 Portraits</button>
+            <button class="filter-btn" data-filter="games">🎮 Games</button>
+        </nav>
+
+        <main class="gallery" id="gallery">
+            <!-- Images will be populated by JavaScript -->
+        </main>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <span class="close">&times;</span>
+                <button class="nav-btn prev-btn" id="prevBtn">&lt;</button>
+                <img class="lightbox-img" id="lightboxImg" src="" alt="">
+                <button class="nav-btn next-btn" id="nextBtn">&gt;</button>
+                <div class="lightbox-info">
+                    <h3 id="lightboxTitle"></h3>
+                    <p id="lightboxCategory"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
